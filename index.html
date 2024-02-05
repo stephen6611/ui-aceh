@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Bank Aceh</title>
+    <!-- Simple bar CSS -->
+    <link rel="stylesheet" href="css/simplebar.css" />
+    <!-- Fonts CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="css/feather.css" />
+    <!-- Date Range Picker CSS -->
+    <link rel="stylesheet" href="css/daterangepicker.css" />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/app-light.css" id="lightTheme" />
+    <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled />
+  </head>
+  <body class="vertical light">
+    <div class="wrapper">
+      <nav class="topnav navbar navbar-light">
+        <button
+          type="button"
+          class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar"
+        >
+          <i class="fe fe-menu navbar-toggler-icon"></i>
+        </button>
+        <form class="form-inline mr-auto text-prime">
+          <!-- <input
+            class="form-control mr-sm-2 bg-transparent border-0 pl-4 text-muted"
+            type="search"
+            placeholder="Type something..."
+            aria-label="Search"
+          /> -->
+          <i class="fluent--home-32-regular mr-1 mt-n1"></i>
+          <span>
+            / Data Entry / Detail / Tab Main Data Entry / Data Debitur &
+            Pasangan</span
+          >
+        </form>
+        <ul class="nav">
+          <!-- <li class="nav-item">
+              <a
+                class="nav-link text-muted my-2"
+                href="#"
+                id="modeSwitcher"
+                data-mode="light"
+              >
+                <i class="fe fe-sun fe-16"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-muted my-2"
+                href="./#"
+                data-toggle="modal"
+                data-target=".modal-shortcut"
+              >
+                <span class="fe fe-grid fe-16"></span>
+              </a>
+            </li>
+            <li class="nav-item nav-notif">
+              <a
+                class="nav-link text-muted my-2"
+                href="./#"
+                data-toggle="modal"
+                data-target=".modal-notif"
+              >
+                <span class="fe fe-bell fe-16"></span>
+                <span class="dot dot-md bg-success"></span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-muted pr-0"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="avatar avatar-sm mt-2">
+                  <img
+                    src="./assets/avatars/face-1.jpg"
+                    alt="..."
+                    class="avatar-img rounded-circle"
+                  />
+                </span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item" href="#">Activities</a>
+              </div>
+            </li> -->
+        </ul>
+      </nav>
+      <aside
+        class="sidebar-left border-right bg-white shadow"
+        id="leftSidebar"
+        data-simplebar
+      >
+        <a
+          href="#"
+          class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3"
+          data-toggle="toggle"
+        >
+          <i class="fe fe-x"><span class="sr-only"></span></i>
+        </a>
+        <nav class="vertnav navbar navbar-light">
+          <!-- nav bar -->
+          <div class="w-100 mb-4 d-flex">
+            <a
+              class="navbar-brand mx-auto mt-4 flex-fill text-center"
+              href="./index.html"
+            >
+              <img src="/assets/images/logo.svg" alt="" />
+            </a>
+          </div>
+          <ul
+            class="navbar-nav flex-fill w-100 mb-0 mt-n2 dropdown-divider-2"
+          ></ul>
+          <p class="text-muted nav-heading mt-4 mb-1">
+            <span>Main Menu</span>
+          </p>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item w-100">
+              <a class="nav-link" href="widgets.html">
+                <i class="solar--file-text-bold"></i>
+                <span class="ml-2 item-text">Inquiry Calon Debitur</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item w-100">
+              <a class="nav-link" href="widgets.html">
+                <i class="solar--file-text-bold"></i>
+                <span class="ml-2 item-text">Data Entry</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item w-100">
+              <a class="nav-link" href="widgets.html">
+                <i class="solar--file-text-bold"></i>
+                <span class="ml-2 item-text">Akad</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item w-100">
+              <a class="nav-link" href="widgets.html">
+                <i class="solar--file-text-bold"></i>
+                <span class="ml-2 item-text">Inbox Pencairan</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav flex-fill w-100 mb-6">
+            <li class="nav-item w-100">
+              <a class="nav-link" href="widgets.html">
+                <i class="solar--file-text-bold"></i>
+                <span class="ml-2 item-text">Inquiry Status Aplikasi</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav flex-fill w-100 dropdown-divider-3 mb-5">
+            <li class="nav-item w-100">
+              <a class="nav-link" href="../docs/index.html">
+                <span class="avatar avatar-sm mt-2">
+                  <img
+                    src="./assets/avatars/face-1.jpg"
+                    alt="..."
+                    class="avatar-img rounded-circle mb-n3"
+                  />
+                </span>
+                <span class="ml-3 item-text">Ahmad Zaki Mubarak</span>
+                <span class="ml-3 item-text ml-6 small mb-0"
+                  >Account Officer</span
+                >
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav flex-fill w-100 mb-n6">
+            <li class="nav-item w-100 mt-4 mb-n3">
+              <a class="nav-link" href="../docs/index.html">
+                <i class="solar--logout-outline"></i>
+                <span class="ml-3 item-text">Keluar</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav flex-fill w-100 mt-4 dropdown-divider">
+            <br />
+            <li class="nav-item w-100 ml-2 mt-n3">
+              <a
+                class="nav-link text-center justify-content-center"
+                href="../docs/index.html"
+              >
+                <span class="item-text text-center small">Powered By DMS</span>
+
+                <span class="item-text text-center h5 mb-0 text-dark"
+                  >Digiloan System</span
+                >
+                <span class="item-text text-center text-danger h6"
+                  >Version 1.1</span
+                >
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main role="main" class="main-content">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <h2 class="page-title">Data Entry</h2>
+              <!-- Tabs Data Entry -->
+
+              <!-- form Informasi Aplikasi -->
+              <div class="card shadow mb-4">
+                <div class="card-header">
+                  <strong class="card-title text-light"
+                    >Informasi Aplikasi</strong
+                  >
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="simpleinput">No. Aplikasi</label>
+                        <input
+                          type="text"
+                          id="simpleinput"
+                          readonly=""
+                          class="form-control"
+                          placeholder="Aceh-MM-20231130"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-email">Tanggal Aplikasi</label>
+                        <input
+                          type="date"
+                          disabled
+                          id="example-date"
+                          name="example-date"
+                          class="form-control"
+                          placeholder="date"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-select">Cabang</label>
+                        <select
+                          class="form-control"
+                          readonly=""
+                          disabled
+                          id="example-select"
+                        >
+                          <option>Aceh</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="simpleinput"
+                          >Nama AO (Account Officer)</label
+                        >
+                        <input
+                          type="text"
+                          id="simpleinput"
+                          readonly=""
+                          class="form-control"
+                          placeholder="Hanum Nirmala"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-select">Pilih Unit</label>
+                        <select
+                          class="form-control"
+                          readonly=""
+                          disabled
+                          id="example-select"
+                        >
+                          <option>Kota Banda Aceh</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- form Data debitur pemohon -->
+                </div>
+              </div>
+              <!-- / .Data Debitur Pemohon -->
+              <div class="card shadow mb-4">
+                <div class="card-header">
+                  <strong class="card-title text-light"
+                    >Data Debitur (Pemohon)</strong
+                  >
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="simpleinput">No. Permohonan*</label>
+                        <input
+                          required
+                          type="text"
+                          id="simpleinput"
+                          class="form-control"
+                          placeholder="Aceh-MM-20231130"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-email">Nama</label>
+                        <input
+                          type="text"
+                          id="example-email"
+                          name="example-email"
+                          class="form-control"
+                          placeholder="Nama"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-email">Tempat Lahir</label>
+                        <input
+                          type="text"
+                          id="example-text"
+                          name="example-email"
+                          class="form-control"
+                          placeholder="Jakarta"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-email">Alamat</label>
+                        <input
+                          type="address"
+                          id="example-address"
+                          name="example-address"
+                          class="form-control"
+                          placeholder="Kp. Rawa Bogo RT.002/004 Jatimekar, Jatiasih - Kota Bekasi"
+                        />
+                      </div>
+                      <label for="basic-url">Total Kewajiban Debitur</label>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon3"
+                            >Rp.</span
+                          >
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="basic-url"
+                          placeholder="6.000.000,-"
+                          aria-describedby="basic-addon3"
+                        />
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                          <label for="validationCustom03"
+                            >Kabupaten / Kotamadya</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom03"
+                            required=""
+                            placeholder="Kota Bekasi"
+                          />
+                          <div class="invalid-feedback">
+                            Please provide a valid city.
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="validationCustom03">Provinsi</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom03"
+                            required=""
+                            placeholder="Jawa Barat"
+                          />
+                          <div class="invalid-feedback">
+                            Please provide a valid city.
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="validationCustom05">Kode Pos</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom05"
+                            required=""
+                            placeholder="17422"
+                          />
+                          <div class="invalid-feedback">
+                            Please provide a valid zip.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                          <label for="validationCustom03">Alamat Email</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom03"
+                            required=""
+                            placeholder="tes@email.com"
+                          />
+                          <div class="invalid-feedback">
+                            Please provide a valid city.
+                          </div>
+                        </div>
+                        <div class="col-md-4 md-3">
+                          <label for="basic-url">Kontak Darurat</label>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon3"
+                                >+62</span
+                              >
+                            </div>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="basic-url"
+                              placeholder="89525658182"
+                              aria-describedby="basic-addon3"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                          <label for="validationCustom05">Upload KTP</label>
+                          <div class="input-group mb-3">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="ktp.jpg"
+                              aria-label="Recipient's username"
+                              aria-describedby="button-addon2"
+                            />
+                            <div class="input-group-append">
+                              <button
+                                class="btn btn-warning"
+                                type="button"
+                                id="button-addon2"
+                              >
+                                View
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="simpleinput">Tanggal Permohonan*</label>
+                        <input
+                          type="date"
+                          id="simpleinput"
+                          class="form-control"
+                          placeholder=""
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-select">NIK</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="3671060209980005"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="simpleinput">Tanggal Lahir*</label>
+                        <input
+                          type="date"
+                          id="simpleinput"
+                          class="form-control"
+                          placeholder=""
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-select">Kelurahan</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Jatimekar"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-select">Kecamatan</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Jatiasih"
+                        />
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                          <label for="validationCustom03"
+                            >No. Rek Tabungan*</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom03"
+                            required=""
+                          />
+                          <div class="invalid-feedback">
+                            Please provide a valid city.
+                          </div>
+                        </div>
+                        <div class="col-md-4 md-3">
+                          <label for="basic-url">No. HP (WA)*</label>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon3"
+                                >+62</span
+                              >
+                            </div>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="basic-url"
+                              placeholder="89525658182"
+                              aria-describedby="basic-addon3"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                          <label for="validationCustom05">No. CIF</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom05"
+                            required=""
+                          />
+                          <div class="invalid-feedback">
+                            Please provide a valid zip.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Data Pasangan -->
+                </div>
+              </div>
+              <div class="card shadow mb-4">
+                <div class="card-header">
+                  <strong class="card-title text-light">Data Pasangan</strong>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="simpleinput">Nama</label>
+                        <input
+                          type="text"
+                          id="simpleinput"
+                          class="form-control"
+                          placeholder="Hanum Nirmala"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-email">Tanggal Lahir</label>
+                        <input
+                          type="date"
+                          id="example-date"
+                          name="example-date"
+                          class="form-control"
+                          placeholder="date"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-select">Bidang Usaha</label>
+                        <input
+                          type="text"
+                          id="example-date"
+                          name="example-date"
+                          class="form-control"
+                          placeholder="Nama Bidang Usaha"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-select">Alamat Kantor</label>
+                        <input
+                          type="address"
+                          id="example-date"
+                          name="example-date"
+                          class="form-control"
+                          placeholder="Alamat Kantor"
+                        />
+                      </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label for="simpleinput">Tempat Lahir</label>
+                        <input
+                          type="text"
+                          id="simpleinput"
+                          class="form-control"
+                          placeholder="Jakarta"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-select">Nama Perusahaan</label>
+                        <input
+                          type="text"
+                          id="simpleinput"
+                          class="form-control"
+                          placeholder="Nama Perusahaan"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="example-select">Pangkat / Jabatan</label>
+                        <input
+                          type="text"
+                          id="simpleinput"
+                          class="form-control"
+                          placeholder="Pangkat / Jabatan"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationCustom05">Upload KTP</label>
+                        <div class="input-group mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="ktp.jpg"
+                            aria-label="Recipient's username"
+                            aria-describedby="button-addon2"
+                          />
+                          <div class="input-group-append">
+                            <button
+                              class="btn btn-warning"
+                              type="button"
+                              id="button-addon2"
+                            >
+                              View
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2 text-center">
+                <button type="button" class="btn mb-2 mr-3 btn-primary btn-lg">
+                  Save
+                </button>
+                <button
+                  type="button"
+                  class="btn mb-2 mr-4 btn-warning btn-lg font-weight-bolder"
+                >
+                  Next To Akad
+                  <i class="tabler--square-rounded-arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- end section -->
+            </div>
+            <!-- .col-12 -->
+          </div>
+          <!-- .row -->
+        </div>
+        <!-- .container-fluid -->
+      </main>
+      <!-- main -->
+    </div>
+    <!-- .wrapper -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/jquery.stickOnScroll.js"></script>
+    <script src="js/tinycolor-min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/apps.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-56159088-1");
+    </script>
+  </body>
+</html>
